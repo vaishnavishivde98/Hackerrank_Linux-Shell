@@ -1,0 +1,7 @@
+read X
+read Y
+
+echo $((X+Y))  #Sum of X and Y
+echo $((X-Y))  #Difference of X and Y
+echo $((X*Y))  #Product of X and Y
+echo $((X/Y))  #Quotient of X and Y
