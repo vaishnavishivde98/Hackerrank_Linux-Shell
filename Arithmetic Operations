@@ -1,0 +1,4 @@
+read exp
+result=$(echo "scale=4; $exp" | bc)
+
+printf "%.3f\n" "$result"
