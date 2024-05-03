@@ -1,0 +1,8 @@
+array=()
+
+while read line || [[ -n "$line" ]]
+do
+    array+=( $line ) 
+done
+
+echo "${#array[@]}"
