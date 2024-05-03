@@ -1,0 +1,16 @@
+array=()
+
+while read line || [[ -n "$line" ]]
+do
+    array+=( $line ) 
+done
+
+filtered_array=()
+for i in "${array[@]}"
+do  
+    if [[ "$i" != *"a"* ]] && [[ "$i" != *"A"* ]]
+    then
+        filtered_array+=("$i")
+    fi
+done
+echo "${filtered_array[@]}"
