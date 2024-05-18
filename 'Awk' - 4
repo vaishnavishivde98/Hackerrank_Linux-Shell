@@ -1,0 +1,5 @@
+awk '{
+    printf ($0)
+    if (NR%2 == 0) printf "\n"
+    else printf ";"
+}'
